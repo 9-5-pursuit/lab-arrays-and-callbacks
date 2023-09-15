@@ -26,7 +26,7 @@ const firstWordIndexLessThan2Char = (pan) => pan.findIndex(item => item.length<2
 // For Each
 
 const logValuesTimes3 = (nums) => {
-  nums.forEach(item => {[1,2,3].forEach(_ => console.log(item*3)) });
+  nums.forEach(item => console.log(item*3));
 }
 
 const logWordsWithExclamation = (pan) => {
