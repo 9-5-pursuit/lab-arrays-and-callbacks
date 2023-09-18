@@ -36,13 +36,9 @@ const logWordsWithExclamation = (words) => words.forEach(word => console.log(`${
 
 // Map
 
-const arrayValuesSquaredTimesIndex = (nums) => {
-  return nums.map((num, index) => num ** 2 * index)
-};
+const arrayValuesSquaredTimesIndex = (nums) => nums.map((num, index) => num ** 2 * index)
 
-const arrayWordsUpcased = (words) => {
-  return words.map((word) => word.toUpperCase())
-};
+const arrayWordsUpcased = (words) => words.map((word) => word.toUpperCase())
 
 // Some
 
