@@ -42,22 +42,26 @@ const firstWordLongerThan4Char = (words) => {
 
 // Find Index
 
-const firstNumIndexDivisibleBy3 = () => {
-  //
+const firstNumIndexDivisibleBy3 = (nums) => {
+const number = (num) => num % 3 === 0; 
+
+  return nums.findIndex(number)
 };
 
-const firstWordIndexLessThan2Char = () => {
+const firstWordIndexLessThan2Char = (words) => {
+  const firstWord = (word) => word.length < 2;
+  return words.findIndex(firstWord)
   //
 };
 
 // For Each
 
-const logValuesTimes3 = () => {
-  //
+const logValuesTimes3 = (nums) => {
+  nums.forEach((num) => console.log(num * 3))
 };
 
-const logWordsWithExclamation = () => {
-  //
+const logWordsWithExclamation = (words) => {
+  words.forEach((word) => console.log(word + "!"));
 };
 
 // Map
