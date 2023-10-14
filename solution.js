@@ -28,13 +28,16 @@ const arrayOddLengthWords = (words) => {
 
 // Find
 
-const firstValDivisibleBy4 = () => {
-  //i need to check if the number is divisible locate that number anbd then return it 
-  //checking if something is divisible by 4  modulo num % 4 === 0 
+const firstValDivisibleBy4 = (nums) => {
+
+ return nums.find((num) => num % 4 === 0)
+   
+  
 };
 
-const firstWordLongerThan4Char = () => {
-  //
+const firstWordLongerThan4Char = (words) => {
+  return words.find((word)=> word.length > 4)
+
 };
 
 // Find Index
