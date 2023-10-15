@@ -1,72 +1,91 @@
 const { nums, words } = require("./data/data.js");
 
 // Every
-const isEveryNumGreaterThan2 = () => {
-  //
+const isEveryNumGreaterThan2 = (nums) => {
+  // Use the every() method to check if every number in the array is greater than 2
+
+  return nums.every(num => num >= 2 )
 };
 
-const isEveryWordShorterThan7 = () => {
-  //
+const isEveryWordShorterThan7 = (words) => {
+
+  //checking if the LENGTH of the word is less than 7 
+  return words.every(word => word.length < 7); 
 };
 
 // Filter
 
-const arrayLessThan5 = () => {
-  //
+const arrayLessThan5 = (nums) => {
+  //checks if the number is less than 5
+  return nums.filter(num => num < 5 );
 };
 
-const arrayOddLengthWords = () => {
-  //
+const arrayOddLengthWords = (words) => {
+  //check if the word is an odd length so if i divide by 2 i should have a remainder of 1 
+
+  return words.filter(word => word.length % 2 == 1)
 };
 
 // Find
 
-const firstValDivisibleBy4 = () => {
-  //
+const firstValDivisibleBy4 = (nums) => {
+
+ return nums.find((num) => num % 4 === 0)
+   
+  
 };
 
-const firstWordLongerThan4Char = () => {
-  //
+const firstWordLongerThan4Char = (words) => {
+  return words.find((word)=> word.length > 4)
+
 };
 
 // Find Index
 
-const firstNumIndexDivisibleBy3 = () => {
-  //
+const firstNumIndexDivisibleBy3 = (nums) => {
+const number = (num) => num % 3 === 0; 
+
+  return nums.findIndex(number)
 };
 
-const firstWordIndexLessThan2Char = () => {
+const firstWordIndexLessThan2Char = (words) => {
+  const firstWord = (word) => word.length < 2;
+  return words.findIndex(firstWord)
   //
 };
 
 // For Each
 
-const logValuesTimes3 = () => {
-  //
+const logValuesTimes3 = (nums) => {
+  nums.forEach((num) => console.log(num * 3))
 };
 
-const logWordsWithExclamation = () => {
-  //
+const logWordsWithExclamation = (words) => {
+  words.forEach((word) => console.log(word + "!"));
 };
 
 // Map
 
-const arrayValuesSquaredTimesIndex = () => {
-  //
+const arrayValuesSquaredTimesIndex = (nums) => {
+  return nums.map((num, index) => {
+    return num * num * index;
+  });
 };
 
-const arrayWordsUpcased = () => {
+const arrayWordsUpcased = (words) => {
   //
+  return words.map((word) => word.toUpperCase());
 };
 
 // Some
 
-const areSomeNumsDivisibleBy7 = () => {
-  //
+const areSomeNumsDivisibleBy7 = (nums) => {
+  const divisibleBy7 = (num) => num % 7 === 0;
+  return nums.some(divisibleBy7) 
 };
 
-const doSomeWordsHaveAnA = () => {
-  //
+const doSomeWordsHaveAnA = (words) => {
+  return words.some((word) =>word.includes("a"))
 };
 
 module.exports = {
