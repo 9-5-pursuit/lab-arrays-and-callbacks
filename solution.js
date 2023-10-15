@@ -66,22 +66,26 @@ const logWordsWithExclamation = (words) => {
 
 // Map
 
-const arrayValuesSquaredTimesIndex = () => {
-  //
+const arrayValuesSquaredTimesIndex = (nums) => {
+  return nums.map((num, index) => {
+    return num * num * index;
+  });
 };
 
-const arrayWordsUpcased = () => {
+const arrayWordsUpcased = (words) => {
   //
+  return words.map((word) => word.toUpperCase());
 };
 
 // Some
 
-const areSomeNumsDivisibleBy7 = () => {
-  //
+const areSomeNumsDivisibleBy7 = (nums) => {
+  const divisibleBy7 = (num) => num % 7 === 0;
+  return nums.some(divisibleBy7) 
 };
 
-const doSomeWordsHaveAnA = () => {
-  //
+const doSomeWordsHaveAnA = (words) => {
+  return words.some((word) =>word.includes("a"))
 };
 
 module.exports = {
