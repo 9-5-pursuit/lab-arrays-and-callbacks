@@ -91,8 +91,15 @@ const firstNumIndexDivisibleBy3 = (nums) => {
 };
 
 
-const firstWordIndexLessThan2Char = () => {
-  //
+const firstWordIndexLessThan2Char = (words) => {
+  const lessThan2=(element,index)=>{
+    if(element.length<2){
+       return index
+    }
+
+
+  }
+  return words.findIndex(lessThan2)
 };
 
 // For Each
