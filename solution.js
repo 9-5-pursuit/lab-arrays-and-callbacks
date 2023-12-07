@@ -1,22 +1,63 @@
 const { nums, words } = require("./data/data.js");
 
-// Every
-const isEveryNumGreaterThan2 = () => {
-  //
+//Every
+const isEveryNumGreaterThan2 = (nums) => {
+const greaterThan2=(element)=>{
+
+  if(element){
+    return element >2
+  }
+
+}
+return nums.every(greaterThan2)
+
+   
+   
+}
+
+
+
+
+  
+
+
+const isEveryWordShorterThan7 = (words) => {
+  const lessThan7=(element)=>{
+    if(element){
+      return element.length <7
+    }
+
+
+  }
+  return words.every(lessThan7)
+ 
+  
 };
 
-const isEveryWordShorterThan7 = () => {
-  //
-};
-
-// Filter
+//Filter
 
 const arrayLessThan5 = () => {
-  //
+  const result = nums.filter((num) => {
+    return num < 5 || num === 0;
+  });
+  return result;
 };
+arrayLessThan5();
 
 const arrayOddLengthWords = () => {
-  //
+
+  const result=words.filter((word)=>{
+
+    if(word.length%2!==0){
+
+
+      return word
+    }
+ 
+});
+ 
+  return result
+  
 };
 
 // Find
