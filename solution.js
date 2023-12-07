@@ -67,8 +67,13 @@ const firstValDivisibleBy4 = (nums) => {
   return nums.find(firstValueFound)
 };
 
-const firstWordLongerThan4Char = () => {
-  //
+const firstWordLongerThan4Char = (words) => {
+  const firstWordFound=(element)=>{
+    if(element){
+      return element.length > 4
+    }
+  }
+  return words.find(firstWordFound)
 };
 
 // Find Index
