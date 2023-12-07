@@ -145,8 +145,16 @@ const arrayValuesSquaredTimesIndex = (nums) => {
 };
 console.log(arrayValuesSquaredTimesIndex(nums))
 
-const arrayWordsUpcased = () => {
-  //
+const arrayWordsUpcased = (words) => {
+  const makeUpperCase=(element)=>{
+    if(element.length>0){
+
+      return element.toUpperCase()
+    }
+
+
+  }
+  return words.map(makeUpperCase)
 };
 
 // Some
