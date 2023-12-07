@@ -159,8 +159,17 @@ const arrayWordsUpcased = (words) => {
 
 // Some
 
-const areSomeNumsDivisibleBy7 = () => {
-  //
+const areSomeNumsDivisibleBy7 = (nums) => {
+
+  const divisbleTrue=(element)=>{
+    if(element%7 ===0){
+      return element
+
+    }
+
+
+  }
+  return nums.some(divisbleTrue)
 };
 
 const doSomeWordsHaveAnA = () => {
