@@ -113,15 +113,37 @@ const logValuesTimes3 = (nums) => {
   return nums.forEach(elTimes3)
 };
 
-const logWordsWithExclamation = () => {
+const logWordsWithExclamation = (words) => {
+
+  const foundExclamationAtLastIndex=(element)=>{
+      // if(element.slice(-1)==="!"){
+        if(element.endsWith('!')){//I like this way better💪🏾
+        return element 
+      }
+
+  }
+  return words.forEach(foundExclamationAtLastIndex)
   //
 };
 
 // Map
 
-const arrayValuesSquaredTimesIndex = () => {
-  //
+const arrayValuesSquaredTimesIndex = (nums) => {
+  const squaredIndex=(element)=>{
+    if(element>0){
+      const elIndex=nums.indexOf(element)
+
+      const squareRoot=element*element
+
+      return squareRoot*elIndex
+      
+    }else{
+      return element
+    }
+}
+  return nums.map(squaredIndex)
 };
+console.log(arrayValuesSquaredTimesIndex(nums))
 
 const arrayWordsUpcased = () => {
   //
