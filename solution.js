@@ -15,13 +15,7 @@ return nums.every(greaterThan2)
    
 }
 
-
-
-
-  
-
-
-const isEveryWordShorterThan7 = (words) => {
+  const isEveryWordShorterThan7 = (words) => {
   const lessThan7=(element)=>{
     if(element){
       return element.length <7
@@ -62,8 +56,15 @@ const arrayOddLengthWords = () => {
 
 // Find
 
-const firstValDivisibleBy4 = () => {
-  //
+const firstValDivisibleBy4 = (nums) => {
+  const firstValueFound=(element)=>{
+    if(element){
+      return element%4===0
+    }
+
+
+  }
+  return nums.find(firstValueFound)
 };
 
 const firstWordLongerThan4Char = () => {
