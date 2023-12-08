@@ -172,9 +172,29 @@ const areSomeNumsDivisibleBy7 = (nums) => {
   return nums.some(divisbleTrue)
 };
 
-const doSomeWordsHaveAnA = () => {
-  //
-};
+// const doSomeWordsHaveAnA = (words) => {
+//   const containsLetterA=(element)=>{
+
+//     if(element.length>0&&element.includes('a')){
+//       return element 
+
+
+//     }
+//   }
+// return words.some(containsLetterA)
+// };
+
+const doSomeWordsHaveAnA = (words) => {//like this was betteer
+  const containsLetterA=(element)=>{
+    if(element.includes("a")===true){
+      return true
+    }else{
+      return false
+    }
+  } 
+   return words.some(containsLetterA)
+ 
+ };
 
 module.exports = {
   isEveryNumGreaterThan2,
