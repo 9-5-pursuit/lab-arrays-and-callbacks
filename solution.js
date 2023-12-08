@@ -195,7 +195,19 @@ const doSomeWordsHaveAnA = (words) => {//like this was betteer
    return words.some(containsLetterA)
  
  };
+ //HUNGRY FOR MOREEEE!!!!!!!!
 
+ const sumWthReduce=(nums)=>{
+ 
+  const sumOfArray=(accumulator,currentValue)=>{
+    return accumulator+currentValue
+
+  }
+  return nums.reduce(sumOfArray)
+
+
+ }
+sumWthReduce(nums)
 module.exports = {
   isEveryNumGreaterThan2,
   isEveryWordShorterThan7,
