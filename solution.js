@@ -195,7 +195,10 @@ const doSomeWordsHaveAnA = (words) => {//like this was betteer
    return words.some(containsLetterA)
  
  };
- //HUNGRY FOR MOREEEE!!!!!!!!
+ //HUNGRY FOR MOREEEE!!!!!!!!🍽️
+
+
+ //REDUCE
 
  const sumWthReduce=(nums)=>{
  
@@ -208,6 +211,17 @@ const doSomeWordsHaveAnA = (words) => {//like this was betteer
 
  }
 sumWthReduce(nums)
+
+const concatWithReduce=(words)=>{
+  const concatWords=(acc,curr)=>{
+    return acc+curr
+  }
+  return words.reduce(concatWords)
+
+}
+concatWithReduce(words)
+
+
 module.exports = {
   isEveryNumGreaterThan2,
   isEveryWordShorterThan7,
