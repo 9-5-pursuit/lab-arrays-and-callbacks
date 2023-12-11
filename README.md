@@ -74,8 +74,9 @@ You don't have to write an answer to the thought questions.
 **Thought Questions**
 
 - What happened to the original array?
+it wasnt altered
 - Can you store the values from a `forEach` method in a new array?
-
+you can by pushing them into  a new array
 #### Map
 
 1. Make a new array of each number squared and then multiplied by their index number
@@ -83,8 +84,10 @@ You don't have to write an answer to the thought questions.
 
 **Thought Questions**
 
-- What happened to the original array?
-- Can you store the values from a `map` method in a new array?
+- What happened to the original array? 
+it was not mutated
+- Can you store the values from a `map` method in a new array?s
+map creates and stores values in a new array depending on results of the function's execution
 
 #### Some
 
@@ -101,10 +104,12 @@ You don't have to write an answer to the thought questions.
 **Thought Questions**
 
 - What happened to the original array?
+It got 'reduced' to a single value/element
 
 #### Sort
 
 - Try to sort without any arguments, do you get what you'd expect with the numbers array?
+
 - Try to sort without any arguments, do you get what you'd expect with the words array?
 - Sort the numbers in ascending order
 - Sort the numbers in descending order
