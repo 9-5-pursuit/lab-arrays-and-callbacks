@@ -74,8 +74,9 @@ You don't have to write an answer to the thought questions.
 **Thought Questions**
 
 - What happened to the original array?
+it wasnt altered
 - Can you store the values from a `forEach` method in a new array?
-
+you can by pushing them into  a new array
 #### Map
 
 1. Make a new array of each number squared and then multiplied by their index number
@@ -83,8 +84,10 @@ You don't have to write an answer to the thought questions.
 
 **Thought Questions**
 
-- What happened to the original array?
-- Can you store the values from a `map` method in a new array?
+- What happened to the original array? 
+it was not mutated
+- Can you store the values from a `map` method in a new array?s
+map creates and stores values in a new array depending on results of the function's execution
 
 #### Some
 
@@ -101,19 +104,42 @@ You don't have to write an answer to the thought questions.
 **Thought Questions**
 
 - What happened to the original array?
+It got 'reduced' to a single value/element
 
 #### Sort
 
 - Try to sort without any arguments, do you get what you'd expect with the numbers array?
-- Try to sort without any arguments, do you get what you'd expect with the words array?
-- Sort the numbers in ascending order
-- Sort the numbers in descending order
-- Sort the words in ascending order
-- Sort the words in descending order
+Yes. it sorted by the first integer of appearance from the 'ones' column and so on and so forth (i.e  nums = [10,2,5,8,13,3,1,0] => 0,1,10,13,2,3,5,8)
+However this was only after i duplicated the original nums array - as this function was at the end
+When i called sort on the nums array, it sorted as above but it conflicted with the previous function
 
+- Try to sort without any arguments, do you get what you'd expect with the words array?
+['The', 'brown', 'dog', 'fox', 'jumps', 'lazy', 'over', 'quick', 'the'] - Not quite sure what I expected but as aforemnetioned, it disrupts other test cases iF i do not copy the words array
+- Sort the numbers in ascending order
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+- Sort the numbers in descending order
+ descend [10, 9, 8, 7, 6, 5, 4, 3, 2, 1,0 ] 
+- Sort the words in ascending order
+[
+      'The',   'brown',
+      'dog',   'fox',
+      'jumps', 'lazy',
+      'over',  'quick',
+      'the'
+    ]
+I see now that it soerts aplhabetically first by capitalization, then goes through the lowercases. So case sensitivity is very important.
+- Sort the words in descending order
+words decend [
+      'The',   'the',
+      'quick', 'over',
+      'lazy',  'jumps',
+      'fox',   'dog',
+      'brown'
+    ]
 **Thought Questions**
 
 - What happened to the original array?
+The elements were rearranged though the length did not change
 
 ### Array Methods Challenge Problems
 
@@ -138,7 +164,70 @@ const panagram = [
 #### Working with data
 
 - filter for products with a price that is less than 10, using the array below:
+[
+      {
+        name: 'fairy lights',
+        price: 5.99,
+        description: 'festive holiday decoration'
+      },
+      { name: 'banana', price: 0.99, description: 'full of potassium' },
+      {
+        name: 'egg separator',
+        price: 3.99,
+        description: 'it separates yolks from whites'
+      },
+      { name: 'flag', price: 5.99, description: 'catches the breeze' },
+      { name: 'quark', price: 0.01, description: 'Very small' },
+      {
+        name: 'yoyo',
+        price: 1,
+        description: 'We had to pull some strings to get this one in.'
+      }
+]
+
 - sort alphabetically by product name
+
+sort by name [
+      { name: 'banana', price: 0.99, description: 'full of potassium' },
+      {
+        name: 'egg separator',
+        price: 3.99,
+        description: 'it separates yolks from whites'
+      },
+      {
+        name: 'fairy lights',
+        price: 5.99,
+        description: 'festive holiday decoration'
+      },
+      { name: 'flag', price: 5.99, description: 'catches the breeze' },
+      {
+        name: 'mitt (leather)',
+        price: 15,
+        description: 'regulation sized'
+      },
+      {
+        name: 'nothing',
+        price: 10,
+        description: "Hey, if you pay us, we won't ask any questions."
+      },
+      { name: 'quark', price: 0.01, description: 'Very small' },
+      {
+        name: 'turtleneck',
+        price: 19.99,
+        description: 'available in black and slightly-darker black'
+      },
+      {
+        name: 'violin',
+        price: 2000,
+        description: 'Talk about a JS fiddle...'
+      },
+      {
+        name: 'yoyo',
+        price: 1,
+        description: 'We had to pull some strings to get this one in.'
+      }
+]
+
 
 ```js
 const products = [
