@@ -109,16 +109,37 @@ It got 'reduced' to a single value/element
 #### Sort
 
 - Try to sort without any arguments, do you get what you'd expect with the numbers array?
+Yes. it sorted by the first integer of appearance from the 'ones' column and so on and so forth (i.e  nums = [10,2,5,8,13,3,1,0] => 0,1,10,13,2,3,5,8)
+However this was only after i duplicated the original nums array - as this function was at the end
+When i called sort on the nums array, it sorted as above but it conflicted with the previous function
 
 - Try to sort without any arguments, do you get what you'd expect with the words array?
+['The', 'brown', 'dog', 'fox', 'jumps', 'lazy', 'over', 'quick', 'the'] - Not quite sure what I expected but as aforemnetioned, it disrupts other test cases iF i do not copy the words array
 - Sort the numbers in ascending order
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 - Sort the numbers in descending order
+ descend [10, 9, 8, 7, 6, 5, 4, 3, 2, 1,0 ] 
 - Sort the words in ascending order
+[
+      'The',   'brown',
+      'dog',   'fox',
+      'jumps', 'lazy',
+      'over',  'quick',
+      'the'
+    ]
+I see now that it soerts aplhabetically first by capitalization, then goes through the lowercases. So case sensitivity is very important.
 - Sort the words in descending order
-
+words decend [
+      'The',   'the',
+      'quick', 'over',
+      'lazy',  'jumps',
+      'fox',   'dog',
+      'brown'
+    ]
 **Thought Questions**
 
 - What happened to the original array?
+The elements were rearranged though the length did not change
 
 ### Array Methods Challenge Problems
 

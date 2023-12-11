@@ -51,6 +51,26 @@ console.log('sum', sumOfNums)
 const concatWords = words.reduce((accumulator, current)=> accumulator + current, '')
 console.log('concat', concatWords)
 
+myNums = [...nums]
+
+const sortedNums = myNums.sort()
+console.log(sortedNums)
+
+myWords = [...words]
+const sortedWords = myWords.sort()
+console.log(sortedWords)
+
+const SortNumbersArrAsc = () => myNums.sort((a,b) => a-b)
+console.log(SortNumbersArrAsc(myNums))
+
+const SortNumbersArrDsc = () => myNums.sort((a,b) => b-a)
+console.log('descend',SortNumbersArrDsc(myNums))
+
+const SortWordsArrAsc = () => myWords.sort((a,b) => a-b)
+console.log(SortWordsArrAsc(myWords))
+
+const SortWordsArrDsc = () => myWords.sort((a,b) => b.localeCompare(a))
+console.log('words decend',SortWordsArrDsc(myWords))
 
 module.exports = {
   isEveryNumGreaterThan2,
