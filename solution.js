@@ -213,13 +213,40 @@ const doSomeWordsHaveAnA = (words) => {//like this was betteer
 sumWthReduce(nums)
 
 const concatWithReduce=(words)=>{
-  const concatWords=(acc,curr)=>{
-    return acc+curr
+  const concatWords=(accumulator,currentValue)=>{
+    return accumulator+currentValue
   }
   return words.reduce(concatWords)
 
 }
 concatWithReduce(words)
+///panagrm have to test
+
+const alpha=[a,b,c,d,e,f,g,h,i,j,k,l,m,o,p,q,r,s,t,u,v,w,x,y,z]
+const panagram = [
+  "The",
+  "quick",
+  "brown",
+  "fox",
+  "jumps",
+  "over",
+  "the",
+  "lazy",
+  "dog",
+];
+const isLetterUsedMoreThanOnce=(arr,i)=>{
+ const testCase=(accumulator,currentValue)=>{
+  if(accumulator&&currentValue==alpha[i]){
+    return 'all letters used at least once'
+
+  }
+
+ }
+ return arr.forEach(testCase)
+
+
+}
+isLetterUsedMoreThanOnce(panagram)
 
 
 module.exports = {
