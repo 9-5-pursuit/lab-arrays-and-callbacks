@@ -107,7 +107,7 @@ const firstWordIndexLessThan2Char = (words) => {
 const logValuesTimes3 = (nums) => {
   const elTimes3=(element)=>{
     if(element){
-      return element*3
+      return console.log(element*3)
     }
   }
   return nums.forEach(elTimes3)
@@ -118,7 +118,7 @@ const logWordsWithExclamation = (words) => {
   const foundExclamationAtLastIndex=(element)=>{
       // if(element.slice(-1)==="!"){
         if(element.endsWith('!')){//I like this way better💪🏾
-        return element 
+        return  console.log(element )
       }
 
   }
@@ -236,7 +236,7 @@ const panagram = [
 ];
 const isLetterUsedMoreThanOnce=(arr,i)=>{
  const testCase=(accumulator,currentValue)=>{
-  if(accumulator&&currentValue==alpha[i]){
+  if(accumulator==alpha[i]&&currentValue==alpha[i]){
     return 'all letters used at least once'
 
   }
